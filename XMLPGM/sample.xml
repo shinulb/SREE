@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<students>
+    <student>
+        <Name>jinu<Name>
+        <age>30</age>
+        <course>Btech</course>
+    <student>
+    <student>
+        <Name>kinu<Name>
+        <age>44</age>
+        <course>BCA</course>
+    </student>
+</students>
+

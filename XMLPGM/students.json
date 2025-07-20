@@ -1,0 +1,24 @@
+{
+  "market_name": "Green Valley Market",
+  "location": "Downtown",
+  "products": [
+    {
+      "id": 1,
+      "name": "Apples",
+      "price": 2.5,
+      "quantity": 100
+    },
+    {
+      "id": 2,
+      "name": "Bananas",
+      "price": 1.2,
+      "quantity": 150
+    },
+    {
+      "id": 3,
+      "name": "Tomatoes",
+      "price": 3.0,
+      "quantity": 80
+    }
+  ]
+}

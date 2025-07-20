@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Advanced HTML Tags - No Script</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 2em;
+        }
+
+        canvas {
+            border: 1px solid #ccc;
+        }
+
+        dialog {
+            padding: 1em;
+            border: 1px solid #888;
+            border-radius: 8px;
+        }
+
+        .template-card {
+            border: 1px solid #ccc;
+            padding: 1em;
+            margin: 1em 0;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Advanced HTML Tags (No JavaScript)</h1>
+
+    <!-- <details> and <summary> -->
+    <section>
+        <h2>Details & Summary</h2>
+        <details>
+            <summary>More Information</summary>
+            <p>This section can expand and collapse without any JavaScript.</p>
+        </details>
+    </section>
+
+    <!-- <dialog> shown statically -->
+    <section>
+        <h2>Dialog (Static View)</h2>
+        <dialog open>
+            <p>This is a static HTML dialog (normally controlled by JavaScript).</p>
+        </dialog>
+    </section>
+
+    <!-- <canvas> fallback -->
+    <section>
+        <h2>Canvas</h2>
+        <canvas width="200" height="100">
+            Your browser does not support the canvas element.
+        </canvas>
+        <p>(Canvas won't draw anything without JavaScript.)</p>
+    </section>
+
+    <!-- <svg> vector graphic -->
+    <section>
+        <h2>SVG</h2>
+        <svg width="100" height="100">
+            <circle cx="50" cy="50" r="40" fill="skyblue" stroke="black" stroke-width="2" />
+        </svg>
+    </section>
+
+    <!-- <meter> -->
+    <section>
+        <h2>Meter</h2>
+        <label>
+            Battery Level:
+            <meter value="0.6" min="0" max="1">60%</meter>
+        </label>
+    </section>
+
+    <!-- <progress> -->
+    <section>
+        <h2>Progress</h2>
+        <label>
+            Downloading...
+            <progress value="75" max="100">75%</progress>
+        </label>
+    </section>
+
+    <!-- <output> static -->
+    <section>
+        <h2>Output (Static)</h2>
+        <form oninput="result.value=parseInt(a.value)+parseInt(b.value)">
+            <input type="number" id="a" value="2"> +
+            <input type="number" id="b" value="3"> =
+            <output name="result">5</output>
+        </form>
+    </section>
+
+    <!-- <datalist> -->
+    <section>
+        <h2>Datalist</h2>
+        <input list="languages" placeholder="Choose a language">
+        <datalist id="languages">
+            <option value="HTML">
+            <option value="CSS">
+            <option value="JavaScript">
+            <option value="Python">
+        </datalist>
+    </section>
+
+    <!-- <template> (not rendered) -->
+    <section>
+        <h2>Template (Not Rendered)</h2>
+        <template>
+            <div class="template-card">
+                <h3>Template Content</h3>
+                <p>This content won't display unless activated with JavaScript.</p>
+            </div>
+        </template>
+        <p><em>Note: &lt;template&gt; content is not rendered without scripting.</em></p>
+    </section>
+
+</body>
+
+</html>
